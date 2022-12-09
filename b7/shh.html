@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <form action="">
+            <table border="0">
+                <caption><h3>DANH SÁCH HOÀN HẢO</h3></caption>
+                <tr>
+                    <th class="left">Số nguyên n: </th>
+                    <th class="right"><input type="number" placeholder="Nhập số nguyên n" id="number"></th>
+                </tr>
+                <tr>
+                    <th class="left">Danh sách các số hoàn hảo: </th>
+                    <th class="right right2""><input type=" text" id="result" readonly>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button type="button" class="btn" onclick="myFunction()">Tính</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="rtable3">
+        <table>
+            <tr>
+                <td colspan="2"><b>TÌM KIẾM TUA</b></td>
+            </tr>
+            <tr>
+                <td>Loại tua </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Nơi đi </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Nơi đến </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Giá từ </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Giá đến </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td><input id="check" type="button" value="Tìm Kiem"></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function myFunction() {
+        const num = document.getElementById('number').value;
+        let sum = 0;
+        let text = "";
+        console.log(num);
+    
+        for (let i = 6; i <= num; i++) {
+            if (check(i)) {
+                sum += i;
+                text += i + " ";
+            }
+        }
+    
+        if (sum == 0) {
+            document.getElementById('result').value = "Không có số hoàn hảo nào";
+        }
+        else {
+            document.getElementById('result').value = text;
+        }
+    }
+    
+    function check(n) {
+        let sum = 0;
+        for (let i = 1; i <= n / 2; i++) {
+            if (n % i == 0)
+                sum += i;
+        }
+        if (sum == n) return true; 
+        return false;
+    }
+    </script>
+</body>
+</html>

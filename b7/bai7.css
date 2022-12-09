@@ -1,0 +1,275 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #336699;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.header_search{
+    flex-basis: 65%;
+    display: flex;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+.header_search select{
+    height: 35px;
+}
+.header_search input{
+    height: 35px;
+    width: 50%;
+    outline: 0;
+}
+.btn_search{
+    height: 35px;
+    width: 15%;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart_shopping{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    border: 1px solid black;
+    margin-left: -10%;
+}
+.cart_shopping a{
+    text-align: center;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    line-height: 80px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+    border: 1px solid black;
+}
+.content{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    margin-top: 5px;
+}
+.content_left{
+    display: flex;
+    flex-direction: column;
+}
+.content_left_topic{
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #336699;
+    color: aliceblue;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
+.menu li{
+    list-style-type: none;
+    background-color: rgb(160, 210, 237);
+    border: 1px solid black;
+}
+.menu li a{
+    text-decoration: none;
+    display: inline-block;
+    line-height: 61px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+.menu li a:hover{
+    background-color: #c4e8fb;
+    color: #336699;
+}
+.cha{
+    position: relative;
+}
+.con{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 15rem;
+    display: none;
+}
+.cha:hover .con{
+    display: block;
+}
+.content_right{
+    width: 90%;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+}
+.top{
+    width: 100%;
+    height: 5%;
+    background-color: #336699;
+    display: flex;
+    align-items: center;
+}
+.bottom{
+    width: 100%;
+    height: 95%;
+    /* background-color: rgb(138, 131, 144); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.bottom_top{
+    width: 100%;
+    height: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: #336699; */
+}
+.bottom_duoi{
+    width: 100%;
+    height: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: #336699; */
+}
+.items{
+    width: 24%;
+    height: 100%;
+    /* background-color: rgb(147, 69, 12); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #336699;
+    color: white;
+}
+.picture{
+    width: 90%;
+    height: 60%;
+}
+.picture img{
+    width: 100%;
+    height: 100%;
+}
+.infor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 40%;
+}
+.price{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.cart{
+    padding: 5px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    border-radius: 5px;
+}
+.container {
+    z-index: 100;
+    position: absolute;
+    padding: 8px;
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+    border: 2px solid rgb(234, 238, 32);
+    background-color: aliceblue;
+
+    display: none;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.container:hover {
+    display: flex;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.title,
+.price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.choices>input {
+    display: block;
+    width: 40%;
+}
+
+.btn {
+    color: white;
+    padding: 8px;
+    background-color: orange;
+    font-weight: bold;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+}
+
+.cart:active~.container {
+    display: flex;
+    cursor: pointer;
+}

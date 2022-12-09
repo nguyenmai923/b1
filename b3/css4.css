@@ -5,14 +5,13 @@
 }
 #header{
     width: 100%;
-    height: 100px;
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #fc9c5f;
     position: relative;
     overflow: hidden;
-
 }
 .user_img{
     display: flex;

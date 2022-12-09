@@ -1,0 +1,145 @@
+*{
+    padding: 0px;
+    margin:  0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 30%;
+}
+.header1{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    padding: 10px;
+    color: white;
+    background-color: rgb(129, 7, 7);
+}
+.header1_right{
+    flex-basis: 30%;
+    display: flex;
+}
+.header1_left{
+    flex-basis: 70%;
+}
+.header1_left ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.header1_left ul li{
+    display: block;
+}
+.header1_left ul li a{
+    text-decoration: none;
+    color: white;
+}
+.header2{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(155, 245, 203);
+}
+.logo{
+    margin: 0% 5%;
+    flex-basis: 20%;
+}
+.search{
+    display: inline-block;
+    background-color: rgb(255, 208, 0);
+    border-radius: 16px;
+    width: 30%;
+    height: 15%;
+    flex-basis: 50%;
+}
+.search input{
+    border: 0;
+    width: 90%;
+    height: 25px;
+    flex-basis: 90%;
+    border-radius: 16px 0px 0px 16px;
+}
+.search button{
+    border: 0;
+    background-color: rgb(255, 208, 0);
+    flex-basis: 10%;
+}
+.call{
+    flex-basis: 10%;
+    display: flex;
+    margin: 0% 5%;
+    justify-content: space-around;
+}
+.call i{
+    border: 1px solid blue;
+    padding: 7%;
+    border-radius: 50%;
+}
+.chu a{
+    text-decoration: none;
+}
+.chu a:hover{
+    color: red;
+}
+.shop{
+    flex-basis: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0% 5%;
+}
+.shop .number{
+    background-color: rgb(255, 217, 0);
+    display: block;
+    width: 15px;
+}
+.chu1{
+    margin-right: 5%;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
+.menu li{
+    display: block;
+    list-style-type: none;
+    border: 1px solid black;
+    background-color: bisque;
+}
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 50px;
+    padding-left: 10px;
+    width: 100%;
+}
+.menu li a:hover{
+    background-color: rgb(217, 198, 174);
+}
+.mai{
+    position: relative;
+}
+.menucon{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 15rem;
+}
+.mai:hover .menucon{
+    display: block;
+}
+
+
+
+    
+
+

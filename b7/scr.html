@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center;">
+    <form style="width: 700px; height: 500px; padding: 16px 32px;" action="">
+        <label style="font-weight: bold;">Nhập Tháng: </label>
+        <input id="month-input" type="text">
+        <label style="font-weight: bold;">Nhập năm:</label>
+        <input id="year-input" type="text">
+        <label style="font-weight: bold;">Số ngày la: </label>
+        <input id="result-input" type="text">
+        <br>
+        <br>
+        <button onclick="hienthi();" type="button">Hiển thị số ngày</button>
+    </form>
+    <script>
+        function hienthi() {
+            var thang = document.getElementById('month-input').value
+            var nam = document.getElementById('year-input').value
+            var songay = 31
+            thang = parseInt(thang)
+            nam = parseInt(nam)
+            //xu ly logic
+            if(nam % 4 === 0 && thang === 2){
+                songay = 29
+                document.getElementById('result-input').value = songay
+                return
+            }
+            else if(nam %4 !== 0 && thang === 2){
+                songay = 28
+                document.getElementById('result-input').value = songay
+                return
+            }
+            if(thang === 4 || thang === 6 || thang === 9 || thang === 11){
+                songay = 30
+            }
+            document.getElementById('result-input').value = songay
+            return
+        }
+    </script>
+</body>
+</html>
